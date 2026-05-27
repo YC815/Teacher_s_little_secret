@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數位實驗高中 內部教務系統 v2.3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .terminal {
+            border: 2px solid #00ff41;
+            padding: 2em 3em;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        }
+        .terminal pre {
+            white-space: pre;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <pre>
+╔══════════════════════════════════════════════════╗
+║       數位實驗高中  內部教務系統 v2.3           ║
+║       Digital Experimental High School           ║
+╠══════════════════════════════════════════════════╣
+║                                                  ║
+║  本系統僅供教師使用。                            ║
+║  學生請勿嘗試存取。                              ║
+║                                                  ║
+║  — 蔡老師 敬上                                   ║
+║  （答案絕對不在這裡，不用找了）                  ║
+║                                                  ║
+╚══════════════════════════════════════════════════╝
+
+> 系統狀態：正常運作中
+> 上次登入：2024-12-19 08:42:11
+> <span class="blink">_</span>
+        </pre>
+    </div>
+
+<!--
+  TODO: 記得把登入功能做完！
+  測試帳號: tsai
+  密碼: ILoveProgramming123
+  （做完要刪掉這段！還有下面那個 flag 也要刪！）
+
+  flag2{html_comment_is_not_safe}
+-->
+</body>
+</html>

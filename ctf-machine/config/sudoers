@@ -1,0 +1,8 @@
+Defaults env_reset
+Defaults mail_badpass
+Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+root ALL=(ALL:ALL) ALL
+
+# 蔡老師想用 vim 編輯系統設定，但不知道 vim 可以開 shell（GTFOBins！）
+tsai ALL=(root) NOPASSWD: /usr/bin/vim

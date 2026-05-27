@@ -1,0 +1,9 @@
+services:
+  ctf-machine:
+    build: .
+    container_name: deh-ctf
+    # host 模式：容器直接使用主機網路
+    # 優點：FTP passive mode 自動正常運作，不需額外設定 pasv_address
+    # 注意：此模式僅在 Linux（Raspberry Pi）有效，macOS 不支援
+    network_mode: host
+    restart: unless-stopped
